@@ -22,7 +22,7 @@ console.log(
         <version>1.0.0</version>
 
         {/* If you want this as Number, mark it as num */}
-        <number num>42</number>
+        <SomeNumber num>42</SomeNumber>
 
         {/* Or maybe run some js? */}
         <scriptRes script>return Math.random() * 42;</scriptRes>
@@ -54,7 +54,7 @@ When you compile and run it, you get
   name: 'JsxML',
   description: 'XML-like object creation via JSX',
   version: '1.0.0',
-  number: 42,
+  SomeNumber: 42,
   scriptRes: 30.36912272363861,
   authors: [ { name: 'Vendicated' } ],
   keywords: [],
