@@ -1,0 +1,10 @@
+// <Foo /> obviously would throw a ReferenceError. This is fixed via this Proxy
+// that just returns the accessed property as string if it doesn't exist.
+// the with statement makes it so that everything is read from the Proxy,
+// the has trap is needed to make JavaScript even consider looking the property
+// up on the Proxy
+with (new Proxy(global, {
+    has: () => true,
+    get: (t, p) => p in t ? t[p] : p
+})) {
+

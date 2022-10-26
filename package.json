@@ -1,0 +1,19 @@
+{
+  "name": "jsxml",
+  "version": "1.0.0",
+  "number": 42,
+  "description": "XML-like object creation via JSX",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Vendicated",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.15.12"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.6"
+  }
+}
